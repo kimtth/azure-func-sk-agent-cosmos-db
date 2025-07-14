@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https...",
+    "COSMOS_DATABASE_NAME": "<your-cosmos-db-name>",
+    "COSMOS_CONTAINER_NAME": "<your-cosmos-container-name>",
+    "COSMOS_ENDPOINT": "https://<your-cosmos-db-name>.documents.azure.com:443/",
+    "AZURE_OPENAI_ENDPOINT": "https://<your-azure-openai-endpoint>.openai.azure.com",
+    "AZURE_OPENAI_API_KEY": "<your-azure-openai-api-key>",
+    "AZURE_OPENAI_DEPLOYMENT_NAME": "<your-azure-openai-deployment-name>",
+    "FUNCTIONS_WORKER_RUNTIME": "python"
+  },
+  "ConnectionStrings": {},
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}

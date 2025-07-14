@@ -1,0 +1,25 @@
+# Run your function locally with `func start host`
+@baseUrl = http://localhost:7071/api
+@sessionId = "123e4567-0001"
+
+### 1) Missing user_msg (should return 400 Bad Request)
+GET {{baseUrl}}/chat
+
+### 2) Send chat message via POST
+POST {{baseUrl}}/chat?sessionId={{sessionId}}
+Content-Type: application/json
+
+{
+    "user_msg": "How are you doing today?"
+}
+
+### 3) Send chat message via GET
+GET {{baseUrl}}/chat?sessionId={{sessionId}}&user_msg="How are you doing today?"
+
+### 4) Another conversation turn via POST
+POST {{baseUrl}}/chat?sessionId={{sessionId}}
+Content-Type: application/json
+
+{
+    "user_msg": "Adding new conversation history to Azure Cosmos DB."
+}
