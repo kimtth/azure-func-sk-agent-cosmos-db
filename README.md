@@ -73,10 +73,7 @@ This repo has an Azure Function app that uses managed identity to save conversat
 
 - 🛑 **To resolve FUNCTIONS_WORKER_RUNTIME invalid error**: <i>Error: The following app setting (Site.SiteConfig.AppSettings.FUNCTIONS_WORKER_RUNTIME) for Flex Consumption sites is invalid. Please remove or rename it before retrying.</i>: Do not add `"FUNCTIONS_WORKER_RUNTIME" : "python"` in `local.settings.json`.
 - 🔑 **AzureWebJobsStorage:** Assign the “Storage Blob Data Contributor” role to Azure Functions.
-- 📦 **Dependency Management:** Azure Functions does not natively support Poetry for dependency management. It expects a `requirements.txt` file to install Python dependencies during deployment. The command for converting `poetry.toml` to `requirements.txt` 
-  ```bash
-  poetry export -f requirements.txt --without-hashes -o requirements.txt
-  ```
+- 📦 **Dependency Management:** Azure Functions does not natively support Poetry for dependency management. It expects a `requirements.txt` file to install Python dependencies during deployment.
 
 ### 📚Learn more
 
